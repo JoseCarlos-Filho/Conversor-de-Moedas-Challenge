@@ -1,16 +1,22 @@
 package modules;
 
+import javax.swing.JOptionPane;
+
 public class MenuConversaoDeMoedas extends MenuPrincipal {
 
-//	@Override
-//	public void TelaInicial(Object[] selectionValues, String initialSelection) {
-//		super.TelaInicial(selectionValues, initialSelection);
-//	}
-
+	EntradaDeValores edv = new EntradaDeValores();
+	 
 	public void TelaInicial(Object[] valores, String inicial) {
 		super.TelaInicial(valores, inicial);
 		
+		for (Object valor : valores) {
+			if(valor == "real para dolar") {
+				edv.InputValor();
+			}
+		}
+		
 	}
 
+	
 	
 }
