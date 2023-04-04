@@ -16,7 +16,7 @@ public class MenuConversaoDeMoedas extends MenuPrincipal {
 		Object selection = JOptionPane.showInputDialog(null, "Selecione uma opção", "Conversores",
 				JOptionPane.QUESTION_MESSAGE, null, valores, inicial);
 		System.out.println(selection);
-
+		//teste de branch
 		for (Object valor : valores) {
 			
 			if(valor == "real para dolar") {

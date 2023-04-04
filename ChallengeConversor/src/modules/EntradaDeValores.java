@@ -15,7 +15,7 @@ public class EntradaDeValores extends MenuPrincipal  {
 		if (verifica(input)) {
 			double valorOk = Double.parseDouble(input);
 			mcm.selecionaTipoDeConversao(valorOk);
-			
+			//teste de branch
 			int resposta = JOptionPane.showConfirmDialog(null, "Deseja continuar?");
             if (JOptionPane.OK_OPTION == resposta) {
                 System.out.println("Escolha opção Afirmativa");
