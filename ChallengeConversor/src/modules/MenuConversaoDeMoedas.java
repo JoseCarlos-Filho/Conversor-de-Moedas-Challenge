@@ -42,6 +42,15 @@ public class MenuConversaoDeMoedas extends MenuPrincipal {
 			case "De Euros a Reais":
 				converteReais.converteEuroParaReais(valorOk);
 				break;
+			case "De Libras a Reais":
+				converteReais.converteLibrasParaReais(valorOk);
+				break;
+			case "De Peso Argentino a Reais":
+				converteReais.convertePesoArgentinoParaReais(valorOk);
+				break;
+			case "De Peso Chileno a Reais":
+				converteReais.convertePesoChilenoParaReais(valorOk);
+				break;
 		}
 
 	}
