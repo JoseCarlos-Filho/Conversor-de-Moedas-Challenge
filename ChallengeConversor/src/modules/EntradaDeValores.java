@@ -15,7 +15,6 @@ public class EntradaDeValores extends MenuPrincipal  {
 		if (verifica(input)) {
 			double valorOk = Double.parseDouble(input);
 			mcm.selecionaTipoDeConversao(valorOk);
-			//teste de branch
 			int resposta = JOptionPane.showConfirmDialog(null, "Deseja continuar?");
             if (JOptionPane.OK_OPTION == resposta) {
                 System.out.println("Escolha opção Afirmativa");
@@ -31,9 +30,9 @@ public class EntradaDeValores extends MenuPrincipal  {
 
 	private boolean verifica(String input) {
 		double valor = Double.parseDouble(input);
-		if (valor <= 0) {
-			throw new NumberFormatException("Numero não pode ser 0 ou menor que 0");
+		if (valor >= 0 || valor < 0) {
+			return true;
 		}
-		return true;
+		throw new NumberFormatException("Numero não pode ser 0 ou menor que 0");
 	}
 }
