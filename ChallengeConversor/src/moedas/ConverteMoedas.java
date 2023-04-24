@@ -1,4 +1,4 @@
-package modules;
+package moedas;
 
 import javax.swing.JOptionPane;
 
