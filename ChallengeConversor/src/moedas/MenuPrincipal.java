@@ -1,7 +1,11 @@
 
-package modules;
+package moedas;
 
-import javax.swing.*;
+import javax.swing.JDialog;
+import javax.swing.JOptionPane;
+
+import medidas.EntradaDeValoresMedidas;
+import temperatura.EntradaDeValoresTemperatura;
 
 public class MenuPrincipal {
 
@@ -13,8 +17,14 @@ public class MenuPrincipal {
 		System.out.println(selection);
 		//teste de branch
 		if (selection == "Conversor de Moedas") {
-			EntradaDeValores edv = new EntradaDeValores();
+			EntradaDeValoresMoedas edv = new EntradaDeValoresMoedas();
 			edv.InputValor();
+		} else if (selection == "Conversor de Temperatura") {
+			EntradaDeValoresTemperatura edt = new EntradaDeValoresTemperatura();
+			edt.InputValor();
+		} else if (selection == "Conversor de Medidas") {
+			EntradaDeValoresMedidas edm = new EntradaDeValoresMedidas();
+			edm.InputValor();
 		}
 		
 	}
