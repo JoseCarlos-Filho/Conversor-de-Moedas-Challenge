@@ -1,5 +1,5 @@
 
-package modules;
+package moedas;
 
 import javax.swing.JDialog;
 import javax.swing.JOptionPane;
